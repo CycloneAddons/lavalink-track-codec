@@ -94,7 +94,7 @@ type Track = {
 Clone the repo, install dependencies, build, and run tests:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/CycloneAddons/lavalink-track-codec
 cd lavalink-track-codec
 npm install
 npm run build
