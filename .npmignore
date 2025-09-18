@@ -1,0 +1,29 @@
+# Ignore source files
+src/
+test/
+tests/
+__tests__/
+*.test.ts
+*.spec.ts
+
+# Ignore config files
+tsconfig.json
+tsconfig.*.json
+jest.config.js
+vitest.config.ts
+
+# Ignore local env files
+.env
+.env.*.local
+
+# Ignore editor settings
+.vscode/
+.idea/
+
+# Ignore build tools and metadata
+*.tsbuildinfo
+*.log
+*.tgz
+
+# Ignore Git and docs
+.gitignore
