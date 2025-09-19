@@ -1,26 +1,26 @@
 {
   "name": "lavalink-track-codec",
   "version": "1.0.0",
-  "main": "./dist/index.cjs.js",     
-  "module": "./dist/index.esm.js",    
-  "types": "./dist/index.d.ts",         
+  "main": "./dist/index.js",              
+  "module": "./dist/index.mjs",            
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.d.mts",
+      "require": "./dist/index.js" 
+    }
+  },
   "files": [
     "dist",
     "package.json"
   ],
   "scripts": {
-    "build": "tsup src/index.ts",                   
-    "test": "ts-node test/index.ts" 
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/index.esm.js",   
-      "require": "./dist/index.cjs.js"   
-    }
+    "build": "tsup src/index.ts",
+    "test": "ts-node test/index.ts"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
     "tsup": "^8.1.0",
-    "ts-node": "^10.9.1"               
+    "ts-node": "^10.9.1"
   }
 }
