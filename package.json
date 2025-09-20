@@ -1,13 +1,13 @@
 {
   "name": "lavalink-track-codec",
   "version": "1.0.0",
-  "main": "./dist/index.js",              
-  "module": "./dist/index.mjs",            
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.d.mts",
-      "require": "./dist/index.js" 
+      "require": "./dist/index.js"
     }
   },
   "files": [
@@ -18,6 +18,37 @@
     "build": "tsup src/index.ts",
     "test": "ts-node test/index.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CycloneAddons/lavalink-track-codec.git"
+  },
+  "homepage": "https://github.com/CycloneAddons/lavalink-track-codec",
+  "bugs": {
+    "url": "https://github.com/CycloneAddons/lavalink-track-codec/issues"
+  },
+  "author": "CycloneAddons",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "lavalink",
+    "track",
+    "codec",
+    "encode",
+    "decode",
+    "track-encode",
+    "track-decode",
+    "music",
+    "audio",
+    "discord",
+    "lavalink-node",
+    "lavalink-client",
+    "lavalink-track-encode",
+    "lavalink-track-decode",
+    "lavalink-codec",
+    "lavalink-v4"
+  ],
   "devDependencies": {
     "typescript": "^5.0.0",
     "tsup": "^8.1.0",
